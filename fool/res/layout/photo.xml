@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#888" />
+
+    <ImageButton
+        android:id="@+id/photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_photo"
+        android:background="@drawable/photo" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="   你的东东是啥咧！"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edit_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EC5FA4" />
+
+    <Button
+        android:id="@+id/add_sound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/edit_name"
+        android:layout_alignRight="@+id/textView1"
+        android:background="@drawable/sound" />
+    <TextView 
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_sound"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="时间"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#EC5FA4" />
+    <EditText 
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_biankuang_color"
+        />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/location"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="保存" />
+
+</RelativeLayout>
+</ScrollView>
